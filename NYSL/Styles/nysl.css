@@ -1,0 +1,116 @@
+header{
+  font-size: 140%;
+  position:relative;
+  margin:0%;
+  background-size: cover;
+  background-image: url(../di.jpg);
+
+  background-repeat: inherit;
+  height: 300px;
+}
+h2 { 
+  text-align: center;
+  background-color: black;
+  color: #ffffff; 
+  border: 2px solid #949599;
+  padding: 12px;
+  margin:0 auto; 
+}
+.title{
+  height: 30px;
+}
+img{
+  position: absolute;
+  height: 80px;
+  width: auto;
+  left: 80%;
+  right: 10%;
+  top: 316px;
+}
+article p
+{
+  margin-top:-20px;
+  margin-left: 30px;
+}
+.containerText{
+  overflow: hidden;
+}
+nav{
+  float: left;
+  width: 25%;
+}
+nav a{
+  text-decoration: none;
+  color:blue;
+  font-size: 16px;
+}
+nav ul li{
+  list-style: none;
+  padding-top: 55px;
+  margin-top: 10px;
+}
+.eventContent{
+  float: left;
+  width: 74%;
+  font-size: 18px;
+  margin-top: 2%;
+}
+.abc {
+  list-style-type: lower-latin;
+}
+.Square {
+list-style-type: square;
+}
+.Neg{
+font-weight: bolder;
+}
+.content{
+font-weight: normal;
+}
+.NonN {
+font-weight:normal;
+}
+.NonE {  list-style: none;}
+
+ /* Game-Info */
+.Subtitle, .Subtitle2 {
+  font-style: italic;
+  text-align: left;
+  font-family: Arial;
+  font-weight: normal;
+}
+.Subtitle2{
+  text-decoration: underline;
+  margin-top: -1%; 
+}
+#tabla {
+position: absolute;
+left: 30%;
+top: 50%;
+}
+td,tr{
+  text-align: center;
+  width:200px;
+}
+.filas{
+ height: 40px;
+}
+.alingLeft{
+  text-align: left;
+}
+.negrita{
+  font-weight: bold;
+}
+.info {
+  margin-top: 5%;
+  left: 30%;
+  top: 50%;
+}
+.flotarright{
+  margin-top: -5px;
+  margin-left: 40%;
+}
+.flotarleft{
+  float:left;
+  margin-top: -5px;
+}
