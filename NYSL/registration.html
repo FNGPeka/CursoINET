@@ -1,40 +1,146 @@
 <!DOCTYPE html>
-<html lang = "es">
+<html lang="es">
+
 <head>
     <link rel="stylesheet" href="styles/nysl.css">
-    <meta charset = "utf-8">
+    <meta charset="utf-8">
     <title>Registration</title>
 </head>
+
 <body>
     <header>
-        <h1>Northside Youth Soccer League</h1>        
+        <h1>Northside Youth Soccer League</h1>
     </header>
-    <section class="title"> 
-        <h2>Registration Form</h2>
-        <img src="nysl_logo.png" alt="NYSL">     
-    </section>  
+    <div class="title">
+        <h2 class="Titulos">Registration Form</h2>
+        <img class="logo" src="nysl_logo.png" alt="NYSL">
+    </div>
 
-    <section class="containerText">
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About NYSL</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-            <li><a href="rules.html">Rules</a></li>
-            <li><a href="game_info.html">Game Info</a></li>
-            <li><a href="registration.html">Register</a></li>
-        </ul>
-    </nav>
-    </section>
+    <aside class="containerText">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About NYSL</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="game_info.html">Game Info</a></li>
+                <li><a href="registration.html">Register</a></li>
+            </ul>
+        </nav>
+    </aside>
 
     <section class="eventContent">
-    <form action="show_data.html">
-        Player´s First name: <input type="text" name="first_name" placeholder="First Name" required>
+        <form action="show_data.html" method="GET">
+            <div class="datiano">
+                <div class="leftForms"><label for="first_name">Player´s First name: </label><input class="bajo" id="first_name" type="text" name="first_name" placeholder="First Name" required></div>
+                <div class="derForms"><label for="last_name">Last Name: </label><input class="bajo" type="text" id="last_name" name="last_name" placeholder="Last Name" required></div>
+                <div class="allForms"><label for="StA">Street Address: </label><input class="bajo" type="text" id="StA" name="StA" placeholder="Street Address" required></div>
+                <div class="leftForms"><label for="City">City: </label><input class="bajo" type="text" id="City" name="City" placeholder="City" required></div>
+                <div class="derForms"><label for="ZC">Zip Code: </label><input class="bajo" type="text" id="ZC" name="ZC" placeholder="Zip Code" required></div>
+                <div class="leftForms"><label for="BD">Birth Date(mm/dd/yyyy): </label><input class="bajo" id="BD" type="text" name="BD" placeholder="Birth Date" required></div>
+                <div class="derForms">  <label for="Female">Gender: Female</label> <input type="radio" name="Gender" id="Female" value="Female" checked>
+                                        <label for="Male">Male</label>           <input type="radio" name="Gender" id="Male" value="Male"></div>
+                <div class="allForms"><label for="PG">Parent/Guardian: </label><input class="bajo" id="PG" type="text" name="PG" placeholder="Parent/Guardian" required></div></div>
+        
+                <div class="allForms" > 
+                Grade:
+                <input type="radio" name="Grade" id="PS" value="PS"><label for="PS">Pre school</label>
+                <input type="radio" name="Grade" id="1st" value="1st"><label for="1st"><sup>1st</sup></label> 
+                <input type="radio" name="Grade" id="2nd" value="2nd"><label for="2nd"><sup>2nd</sup></label> 
+                <input type="radio" name="Grade" id="3rd" value="3rd"><label for="3rd"><sup>3rd</sup></label> 
+                <input type="radio" name="Grade" id="4th" value="4th"><label for="4th"><sup>4th</sup></label> 
+                <input type="radio" name="Grade" id="5th" value="5th"><label for="5th"><sup>5th</sup></label>
+                </div>
 
-            <input type="submit" name="submit" value="Send">
 
-              
-    </form>   
+                <div class="WSchool">
+                    <h4>Which elementary school do you live near?</h4>
+                    <h5>Closest School: </h5>    
+                    <div class="Izq">
+                    <input type="radio"  name="School" id="AJK" value="AJK">            <label for="AJK">AJ Katzenmaier</label><hr>
+                    <input type="radio"  name="School" id="Greenbay" value="Greenbay">  <label for="Greenbay">Greenbay </label><hr>  
+                    <input type="radio"  name="School" id="HAY" value="HAY">            <label for="HAY">Howard A Yeager</label><hr>   
+                    </div>
+                    <div class="Der">
+                    <input type="radio"  name="School" id="MPH" value="MPH">            <label for="MPH">Marjorie P Hart </label><hr> 
+                    <input type="radio"  name="School" id="NElem" value="NElem">        <label for="NElem">North Elementary</label><hr> 
+                    <input type="radio"  name="School" id="SElem" value="SElem">        <label for="SElem">South Elementary</label><hr>
+                    </div>
+                    </div>
+
+
+            <div class="WPosition">
+                <h4>What position(s) do you normally play? (check all that apply) </h4>
+                <div class="izq2">
+                    <input id="f" type="checkbox" name="position" value="Forward"><label for="f"> Forward </label> 
+                    <hr>
+                    <input id="d" type="checkbox" name="position" value="Defense"><label for="d"> Defense </label> 
+                    <hr>
+                </div>
+                <div class="der2">
+                    <input id="mf" type="checkbox" name="position" value="Midfield "><label for="mf">Midfield </label>
+                    <hr>
+                    <input id="gk" type="checkbox" name="position" value="Goalkeeper"><label for="gk">Goalkeeper</label>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="USPosition">
+                <h4>Uniform Size:</h4>
+                <hr>
+                <div class="izq3">
+                    <input id="sm" type="radio" name="Uniform Size" value=" Youth Smal"><label for="sm">Youth Smal</label>  
+                    <hr>
+                    <input id="ym" type="radio" name="Uniform Size" value="Youth Medium"><label for="ym">Youth Medium</label> 
+                    <hr>
+                    <input id="yl" type="radio" name="Uniform Size" value="Youth Large "><label for="yl">Youth Large</label> 
+                    <hr>
+                    <input id="s" type="radio" name="Uniform Size" value="Small"><label for="s">Small</label>
+                    <hr>
+                </div>
+                <div class="der3">
+                    <input id="m" type="radio" name="Uniform Size" value="Medium"><label for="m">Medium </label> 
+                    <hr>
+                    <input id="l" type="radio" name="Uniform Size" value="Large"><label for="l">Large </label> 
+                    <hr>
+                    <input id="el" type="radio" name="Uniform Size" value="Extra-Large"><label for="el">Extra-Large </label> 
+                    <hr>
+                </div>
+            </div>
+
+            <div class="contract">
+                <h4>Permission to Play </h4>
+                <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all
+                    the
+                    rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury
+                    associated with soccer and in consideration for the “League” accepting the registrant for its soccer
+                    programs
+                    and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and
+                    associated
+                    personnel and volunteers,including the facilities used for practices and games, against any claim by
+                    or on
+                    behalf of the registrant as a result of the registrant’s participation in the programand/orbeing
+                    transported
+                    to or from NYSL sponsored activities,which transportation </p>
+                <p>By signing below, I herebyagree andauthorizethe above.In addition, by signing below, Ialso
+                    acknowledge that I
+                    have read the cancellation policy and agree to its terms. </p>
+
+                <div class="izq4">
+                    <label for="sign">Parent/Guardian Signature </label>
+                    <input id="sign" type="text" class="bajo" name="Parent Guardian">
+                </div>
+
+                <div class="der4">
+                    <label for="date"></label> Date <input id="date" type="date" class="bajo" name="Date">
+                    <input type="submit">
+                </div>
+
+
+            </div>
+
+        </form>
     </section>
 </body>
+
 </html>

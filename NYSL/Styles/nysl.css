@@ -8,7 +8,7 @@ header{
   background-repeat: inherit;
   height: 300px;
 }
-h2 { 
+.Titulos { 
   text-align: center;
   background-color: black;
   color: #ffffff; 
@@ -17,9 +17,9 @@ h2 {
   margin:0 auto; 
 }
 .title{
-  height: 30px;
+  height: 55px;
 }
-img{
+.logo{
   position: absolute;
   height: 80px;
   width: auto;
@@ -27,17 +27,17 @@ img{
   right: 10%;
   top: 316px;
 }
-article p
-{
+article p{
   margin-top:-20px;
   margin-left: 30px;
 }
 .containerText{
-  overflow: hidden;
+    width: 25%;
+    overflow: hidden;
+    display: inline-block;
 }
 nav{
   float: left;
-  width: 25%;
 }
 nav a{
   text-decoration: none;
@@ -50,11 +50,13 @@ nav ul li{
   margin-top: 10px;
 }
 .eventContent{
-  float: left;
+  float: right;
   width: 74%;
   font-size: 18px;
-  margin-top: 2%;
+
 }
+
+/*rules*/
 .abc {
   list-style-type: lower-latin;
 }
@@ -102,8 +104,7 @@ td,tr{
   font-weight: bold;
 }
 .info {
-  margin-top: 5%;
-  left: 30%;
+  margin-left: 15%;
   top: 50%;
 }
 .flotarright{
@@ -113,4 +114,53 @@ td,tr{
 .flotarleft{
   float:left;
   margin-top: -5px;
+}
+/* Registration*/ 
+.bajo{
+border: none;
+border-bottom: solid #000001 1px;
+text-align: left;
+}
+hr{border: None;}
+
+.leftForms{
+
+float: left;
+width: 50%;
+}
+.derForms{
+float: right;
+width: 50%;
+}
+.allForms{
+
+float: left;
+width: 100%;
+}
+.WSchool{
+  float: left;
+  width: 100%;
+}
+.WPosition{
+  float: left;
+  width: 100%;
+}
+.USPosition{
+  float: left;
+  width: 100%;
+}
+
+.Izq, .izq2, .izq3, .izq4{
+float: left;
+}
+.Der, .der2, .der3, .der4{
+  float: right;
+  width: 60%;
+}
+.contract{
+width: 100%;
+float: right;
+}
+input[type="text"]{
+  width:30%
 }
