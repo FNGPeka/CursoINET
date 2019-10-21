@@ -1,0 +1,12 @@
+var y3 = "prince of persia";
+function MaysPrimera(pepo){
+    pepo=pepo.split("");
+    pepo.forEach(function(pepito, i){
+        if(pepito==" "){
+            pepo[i+1]=pepo[i+1].toUpperCase();
+        }
+    });
+    pepo[0]=pepo[0].toUpperCase();
+    return pepo.join("");
+  }
+  console.log(MaysPrimera(y3))
